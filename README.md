@@ -15,7 +15,7 @@ Technology
 ----------
 
 Physics uses [VMA Win](https://github.com/mveteanu/VMAWin) library for implementing GUI (Windows like) interfaces under DOS.
-[VMA Win](https://github.com/mveteanu/VMAWin) library was also developed by VMASOFT.
+[VMA Win](https://github.com/mveteanu/VMAWin) library was also developed by Marian Veteanu @ VMASOFT.
 
 
 Features
