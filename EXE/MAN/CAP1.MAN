@@ -1,0 +1,398 @@
+.doctitle Capitolul 1 : MISCAREA SI REPAUSUL
+.doctheme 1
+.color 4
+.font 4 3
+
+
+.stringcenter Capitolul 1 : MIÖCAREA ÖI REPAUSUL
+
+
+.color 0
+.font 5 5
+   Fizica studiaza diferite fenomene ale naturii: mecanice, termice, electrice,
+optice, atomice, etc. Cel mai simplu dintre ele este miscarea mecanica,
+studiata in cadrul mecanicii.
+   Mecanica, numita clasica newtoniana, a fost elaborata in esenta de ISAAC
+NEWTON (1643-1727) si expusa in celebra sa carte "Principiile matematice ale
+filosofiei naturale"(1687), unde sunt formulate cele trei legi sau principii
+ale mecanicii, precum si legea atractiei universale (gravitationale) (aplicata
+la miscarea sistemului solar).
+   Mecanica se imparte de obicei in trei capitole: cinematica se ocupa cu
+descrierea geometrica, spatio-temporala, a miscarii (coordonate, timp,
+traiectorie, viteza, acceleratie); dinamica studiaza si cauzele miscarii
+(fortele, impulsul, lucrul mecanic, energia); statica studiaza echilibrul
+corpurilor. Mecanica se mai imparte in: mecanica punctului material, mecanica
+sistemului de puncte materiale, mecanica solidului rigid, mecanica fluidelor,
+etc.
+   In capitolul 1 sunt expuse notiuni de cinematica a punctului material.
+.eop
+.font 4 1
+
+.stringcenter 1.1. Sistem de referinÄÜ
+
+
+.font 5 5
+   Deplasarile oamenilor, miscarile diferitelor piese ale masinilor unelte,
+deplasarea vehiculelor, curgerea apelor, curentii de aer - iata exemple de
+miscari mecanice.
+   Cand vorbim de miscarea mecanica a unui corp, intelegem intotdeauna
+schimbarea pozitiei sale fata de alte corpuri, de obicei fata de Pamant sau
+fata de diferite obiecte fixe pe Pamant (case, borne kilometrice, etc.)
+   Se numeste miscare mecanica a unui corp schimbarea pozitiei sale fata de alte
+corpuri.
+   Repausul este un caz particular al miscarii: un corp este in repaus daca
+pozitia sa fata de alte corpuri nu se schimba.
+   Pentru a studia miscarea unui corp trebuie sa alegem totdeauna un alt corp,
+numit corp de referinta (de exemplu, Pamantul), la care sa raportam in fiecare
+moment pozitia corpului studiat. Desigur, orice corp de referinta este la
+randul sau in miscare fata de alte corpuri. Pentru a determina pozitia
+corpului studiat la diferite momente sunt necesare o rigla si un ceasornic.
+   Corpul de referinta, impreuna cu rigla pentru determinarea pozitiei corpurilor
+studiate si cu ceasornicul pentru indicarea momentului, constituie un sistem
+de referinta, numit pe scurt referential.
+.eop
+
+.font 4 1
+.stringcenter 1.2. Punct material
+
+
+.font 5 5
+   In miscarea mecanica a corpurilor nu sunt determinate unele proprietati ale
+acestora, de exemplu, cele termice, cele optice, si de aceea le putem neglija.
+In multe probleme nu ne intereseaza nici deformarea corpurilor, de exemplu la
+caderea si aruncarea obiectelor, de aceea in astfel de probleme o putem
+neglija, considerand corpul rigid.
+   Miscarea solidului rigid este totusi complicata, de aceea se studiaza mai
+intai miscarea unui corp ale carui dimensiuni si rotatii proprii sunt
+neglijabile in problema data. Acesta este un punct material, caracterizat
+numai prin masa sa (deci un corp cu dimensiuni neglijabile fata de distantele
+pana la corpurile inconjuratoare). Un acelasi corp poate fi considerat punct
+material intr-o problema si in alta problema, nu.
+   De exemplu in miscarea unui vapor pe ocean, dimensiunile sale nu sunt
+esentiale si pot fi neglijate, insa in cazul manevrarii in rada unui port, ele
+nu pot fi neglijate. O piatra in miscarea sa in atmosfera poate fi aproximata
+de cele mai multe ori printr-un punct material, nu insa, de exemplu in cazul
+rostogolirii sale pe o suprafata.
+   Cand toate punctele unui corp se misca identic (miscarea de translatie),
+atunci miscarea unui singur punct oarecare al corpu- lui caracterizeaza pe
+deplin miscarea intregului corp, indiferent de dimensiunile acestuia, deci
+putem aplica modelul punctului material. Daca nu intereseaza masa corpului (in
+cinematica), punctul material se numeste mobil.
+.eop
+
+.font 4 1
+.stringcenter 1.3. Traiectorie. Coordonate. Legea miÅcÜrii
+
+
+.font 5 5
+   Curba descrisa de un mobil in timpul miscarii sale se numeste traiectorie.
+Traiectoria poate fi rectilinie sau curbilinie. Traiectoria curbilinie poate
+fi situata: intr-un plan - miscare plana (de exemplu miscarea circulara), sau
+in spatiu (de exemplu, miscarea unui punct periferic al unui surub). Miscarea
+rectilinie si miscarea circulara sunt cele mai simple si cele mai frecvente
+miscari.
+.color 4
+    1.3.1. Cazul miÅcÜrii rectilinii.
+.color 0
+Pentru a determina pozitia corpului
+in fiecare moment, alegem pe
+dreapta miscarii un punct origine O
+si un sens pozitiv ( obtinem astfel
+axa coordonatelor Ox). Coordonata
+x a corpului este distanta de la
+originea O pana la corp,
+prevazuta cu semnul plus sau minus, dupa cum corpul se afla de partea pozitiva
+sau negativa a axei. (vezi figura).
+ Pentru a descrie miscarea mobilului pe traiectoria sa rectilinie trebuie sa
+cunoastem pozitia mobilului in fiecare moment pe aceasta traiectorie, adica
+coordonata sa x in functie de timpul t:
+.font 10 1
+.incy 10
+               x = f(t).
+.incy 5
+.font 5 5
+.incy 6
+ Aceasta expresie constituie legea miscarii (ecuatia cinematica a miscarii).
+.image 2 280 172 fig13.gif
+.eop
+
+
+.color 4
+    1.3.2. Cazul miÅcÜrii intr-un plan.{noteoln}
+.color 0
+ Pentru a determina pozitia corpului in
+fiecare moment, alegem doua axe de coordonate Ox, Oy, perpendiculare intre ele
+situate in planul miscarii. Pozitia M a corpului este data de cele doua
+coordonate: x (abscisa) si y (ordonata), care se obtin ducand prin M paralele
+la axele de coordonate (vezi figura).
+                                      Pentru a descrie miscarea corpului in
+                                   plan trebuie sa cunoastem coordonatele sale
+                                   (x,y) in functie de timpul t, adica doua
+                                   functii:
+.font 10 1
+                                 x = f{noteoln}
+.subscript 1
+(t),     y = f{noteoln}
+.subscript 2
+(t)
+.incy 8
+.font 5 5
+                                   (ecuatiile cinematice ale miscarii).Fiecare
+                                   ecuatie descrie miscarea proiectiei mobilului
+                                   pe axa respectiva sau miscarea mobilului in
+                                   directia axei respective (de exemplu, spre
+Est sau spre Nord). Miscarea plana a mobilului se descompune astfel in doua
+miscari rectilinii dupa cele doua axe alese.
+   Se pot alege si alte sisteme de coordonate pentru a descrie pozitia si misca-
+rea mobilului, de exemplu pozitia unui vapor pe ocean este data de
+coordonatele sale geografice: latitudinea si longitudinea.
+.image 1 12 114 fig14.gif
+.eop
+
+
+.color 4
+    1.3.3. Cazul miÅcÜrii in spaÄiu.{noteoln}
+.color 0
+   Alegem un sistem de trei axe de coordonate
+Ox, Oy, Oz, perpendiculare intre ele. Atunci poziÄia mobilului M este data de 3
+coordonate: x (abscisa), y (ordonata), z (cota), care se obtin ducand
+prin M paralele la axe.
+    Miscarea corpului in spatiu este descrisa de trei ecuatii:
+.incy 10
+.font 10 1
+          x = f{noteoln}
+.subscript 1
+(t),     y = f{noteoln}
+.subscript 2
+(t),     z = f{noteoln}
+.subscript 3
+(t)
+.font 5 5
+.incy 8
+.incy 10
+   (ecuatiile cinematice ale miscarii). Ele descriu miscarea corpului in spatiu
+dupa cele trei directii. Se pot alege si alte sisteme de coordonate pentru a
+determina pozitia mobilului in spatiu.
+.eop
+.font 4 1
+.stringcenter 1.4. Vector de poziÄie
+
+
+.font 5 5
+  Un alt mod de a preciza pozitia unui mobil este urmatorul: alegem pe corpul
+de referinta un punct-origine O si il unim cu mobilul M, obtinem astfel
+segmentul de dreapta orientat {noteoln}
+.vector OM
+, numit vector de pozitie al mobilului, {noteoln}
+.vector r
+ = {noteoln}
+.vector OM
+.
+
+                                 El este caracterizat prin:
+                                 1) modulul (sau marimea) dat de lungimea
+                               r = OM a segmentului orientat {noteoln}
+.vector OM
+;
+                                 2) directie, data de dreapta definita de
+                               punctele O, M;
+                                 3) sens, dat de succesiunea O - M, origine-
+                               mobil.
+                                 Cunoasterea vectorului de pozitie (ca modul,
+                               directie si sens) inseamna cunoastera pozitiei
+                               in spatiu a mobilului.
+
+                                 De exemplu, o instalatie radar determina
+                               vectorul de poziÄie al unui obiect Äinta (avion)
+                               cu ajutorul unui impuls de unde electromagnetice
+                               (radio) dirijat in spatiu. Stiind viteza de
+                               propagare a undelor (c = 300 000 km/s) si masurand
+                               timpul de propagare dus-intors al semnalului,
+                               gasim distanta r pana la obiect. Distanta este
+data de orientarea antenei emitatoare. In timpul miscarii, vectorul de pozitie
+se schimba ca modul si orientare, deci este o functie de timp.
+.image 1 0 95 fig16.gif
+.eop
+
+  Legam de corpul de referinta un sistem ortogonal de coordonate cu originea in
+punctul O. Daca proiectam vectorul de pozitie {noteoln}
+.vector r
+ pe axele de coordonate,
+ducand din varful vectorului {noteoln}
+.vector r
+ paralele la axe, obtinem coordonatele x, y ale
+mobilului. Conform teoremei lui Pitagora: r{noteoln}
+.superscript 2
+ = x{noteoln}
+.superscript 2
+ + y{noteoln}
+.superscript 2
+.
+
+
+
+.font 4 1
+.stringcenter 1.5. OperaÄii cu vectori
+
+
+.font 5 5
+  Operatiile cu vectori se desfasoara diferit de cele cu scalari, respectand
+anumite reguli:
+.color 4
+
+   1. Proiectarea pe o axa. {noteoln}
+.color 0
+Operatia furnizeaza un vector, ce se obtine prin
+ducerea perpendicularelor din origine si varful vectorului la acea axa.
+.image 1 30 260 cap1v1.gif
+.eop
+
+.color 4
+   2. Produsul dintre un scalar Åi un vector. {noteoln}
+.color 0
+Operatia furnizeaza un vector cu
+urmatoarele proprietati:
+.incy 4
+        - originea - comuna cu a celor doi vectori
+.incy 4
+        - directia - comuna cu a celor doi vectori
+.incy 4
+        - sensul   - comun cu al celor doi vectori daca scalarul este pozitiv,
+                     sau invers sensului vechiului vector daca scalarul
+                     este negativ.
+.incy 4
+        - modulul  - obtinut din modulul vechiului vector multiplicat de atatea
+                     ori cat scalarul.
+
+
+.color 4
+   3. Suma a doi vectori. {noteoln}
+.color 0
+Operatia furnizeaza un nou vector ce se obtine prin
+regula paralelogramului cu proprietatile:
+.incy 4
+        - originea - comuna cu a celor doi vectori
+.incy 4
+        - directia - data de diagonala paralelogramului
+                     construit pe cei doi vectori si
+                     care trece prin origine
+.incy 4
+        - sensul   - de la origine spre varful opus al
+                     paralelogramului
+.incy 4
+        - modulul  - dat de relatia:
+.image 1 90 370 cap1v2.gif
+.image 1 430 230 cap1v3.gif
+.eop
+
+.color 4
+   4. DiferenÄa a doi vectori  {noteoln}
+.color 0
+- operatie prin care se aduna primul vector la
+                              opusul celui de al doilea.
+.incy 20
+                              OBS: de regula, daca suma era diagonala ce pleca
+                                   din origine, diferenta va fi cealalta
+                                   diagonala care uneste varfurile celor doi
+                                   vectori.
+.incy 50
+.color 4
+   5. Suma a mai mulÄi vectori  {noteoln}
+.color 0
+- operatia se poate efectua in doua moduri:
+.color 4
+                             Grafic:
+.color 0
+                              - aplicand succesiv regula paralelogramului
+                              - aplicand regula poligonului
+.color 4
+.incy 4
+                             Analitic:
+.color 0
+                              - se translateaza toti vectorii astfel incat sa
+                                aiba originea comuna
+                              - se proiecteaza fiecare vector pe sistemul de
+                                coordonate utilizat, obtinanduse mai multi
+                                vectori "proiectie", pozitivi sau negativi
+                              - se sumeaza de-a lungul fiecareia dintre axe
+                                aceste proiectii tinand seama si de semnul lor
+                              - rezultanta se obtine prin regula paralelogra-
+mului prin sumarea rezultatelor obtinute pe fiecare axa in parte.
+.incy 3
+  OBS : Suma vectoriala este comutativa si asociativa.
+.image 1 60 40 cap1v4.gif
+.image 1 00 195 cap1v5.gif
+.eop
+
+
+
+.color 4
+   6. Produsul scalar a doi vectori  {noteoln}
+.color 0
+- este singura operatie cu vectori care
+furnizeaza un scalar:
+.incy 10
+      {noteoln}
+.vector a
+.vector b
+ = ab cos ‡
+
+
+.color 4
+   7. Produsul vectorial a doi vectori.  {noteoln}
+.color 0
+Operatia furnizeaza un vector cu
+proprietatile:
+
+      - origine  : comuna cu a vechilor vectori
+      - directie : perpendiculara pe planul celor doi vectori
+      - sens    :  acelasi cu sensul de inaintare al unui burghiu drept asezat
+                   de-a lungul directiei care este rotit ca si cum am roti
+                   primul vector peste al doilea pe drumul cel mai scurt
+      - modulul  : c = ab sin ‡
+.incy 40
+                   OBS: Produsul vectorial este anticomutativ:
+.incy 10
+                        {noteoln}
+.vector c
+ = {noteoln}
+.vector a
+ x {noteoln}
+.vector b
+ = - ({noteoln}
+.vector b
+ x {noteoln}
+.vector a
+)
+.image 1 35 280 cap1v6.gif
+.eop
+
+.cuprins
+.color 4
+.font 4 3
+
+.stringcenter Capitolul 1 : MIÖCAREA ÖI REPAUSUL
+
+
+.font 4 1
+.color 1
+      {noteoln}
+.link 2 1.1. Sistem de referinÄÜ
+
+
+      {noteoln}
+.link 3 1.2. Punct material
+
+
+      {noteoln}
+.link 4 1.3. Traiectorie. Coordonate. Legea miÅcÜrii
+
+
+      {noteoln}
+.link 7 1.4. Vector de poziÄie
+
+
+      {noteoln}
+.link 8 1.5. OperaÄii cu vectori
+
+.eop

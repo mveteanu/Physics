@@ -1,0 +1,221 @@
+.doctitle Help File
+.doctheme 255
+.color 4
+.font 4 4
+.incy 35
+          FIZICA v.1.0
+.image 1 40 20 atom.gif
+.incy 40
+.color 0
+.font 4 1
+  Bine a€i venit Œn FIZICA, singurul soft educa€ional
+pentru Œnv†€are asistat† de calculator de care ave€i
+nevoie.
+  Programul con€ine partea teoretic† din manualele
+de liceu precum i o serie de teste menite s†
+verifice cunotiin€ele acumulate de elevi.
+  FIZICA este un sistem deschis care permite
+profesorilor s† extind† setul de teorie i probleme
+deja existent.
+.incy 15
+.font 10 1
+.color 1
+             {noteoln}
+.link 7 (c) G&D Chirlean ;  V.M.A. soft
+.eop
+.color 4
+.font 4 3
+.stringcenter FIZICA v.1.0 - Meniul principal
+.color 0
+.font 5 5
+.incy 50
+ Meniul principal al programului const† dintr-o bar† cu 5 butoane
+afiat† Œn partea de jos a ecranului. Aceste butoane sunt:
+.font 10 1
+
+   Intrare elev {noteoln}
+.font 5 4
+.incy 4
+          - punctul de intrare Œn program al elevului.
+                                  Se permite selectarea urmatorilor itemi:
+                                  Manual, Teste  verificare, Teste autoverificare
+.font 10 1
+
+   Intrare profesor {noteoln}
+.font 5 4
+.incy 4
+  - intrare pe baz† de parol†.
+                                  Se permite editarea vizual† a testelor de probleme.
+.font 10 1
+
+   Setare {noteoln}
+.font 5 4
+.incy 4
+                   - se efectueaz† diferite set†ri ale sistemului.
+.font 10 1
+
+
+   Informa€ii       {noteoln}
+.font 5 4
+.incy 4
+ - se afieaz† aceste informa€ii.
+.font 10 1
+
+
+   Ieire {noteoln}
+.font 5 4
+.incy 4
+                    - se revine Œn sistemul de operare.
+.eop
+.color 4
+.font 4 3
+.stringcenter FIZICA v.1.0 - Manualul de teorie
+.color 0
+.font 5 5
+.incy 50
+ Acesta este o replic† Œn form† electronic† a celor patru manuale de
+liceu. La ap†sarea butonului < Manual > se permite alegerea unuia
+din cele cinci fenomene fundamentale care se studiaz† Œn liceu:
+.incy 10
+.color 4
+   Fenomenele mecanice
+   Fenomenele termice
+   Fenomenele electromagnetice
+   Fenomenele optice
+   Fenomenele atomice, nucleare si de corp solid
+.incy 10
+.color 0
+ Dup† alegerea unui fenomen se afieaz† lista cu principalele capitolele
+din care se va trebui s† alege€i capitolul pe care dori€i s†-l studia€i.
+.incy 20
+ Navigarea prin manualul de teorie se face foarte comod datorit†
+organiz†rii acestuia Œn format de HiperText.
+.incy 10
+ Este posibil† atƒt defilarea pagin† cu pagin† ca Œntr-un manual clasic
+dar i saltul direct la un item selectat.
+.eop
+.color 4
+.font 4 3
+.stringcenter FIZICA v.1.0 - Testele de verificare
+.color 0
+.font 5 5
+.incy 50
+ Testele de verificare sunt teste care trebuiesc rezolvate de elevi
+dup† ce i-au Œnsuit partea de teorie corespunz†toare. Ca i la
+manualul de teorie este posibil† alegerea unui test pentru verificarea
+cunotiin€elor acumulate Œn urma studiul urm†toarelor fenomene:
+.incy 10
+.color 4
+   Fenomene mecanice
+   Fenomene termice
+   Fenomene electromagnetice
+   Fenomene optice
+   Fenomene atomice, nucleare si de corp solid
+.incy 10
+.color 0
+   Dup† alegerea unui item se solicit† specificarea unuia din cele
+apte tipuri de teste disponibile.
+.incy 10
+   Fiecare test trebuie efectuat contra cronometru, timpul acordat
+fiind Œn func€ie de dificultatea i m†rimea testului ales.
+.eop
+.color 4
+.font 4 3
+.stringcenter FIZICA v.1.0 - Testele de autoverificare
+.color 0
+.font 5 5
+.incy 50
+ Testele de autoverificare sunt teste care se rezolv† de elevi
+asista€i Œndeaproape de calculator. Aceste teste sunt necesare la
+Œnsuirea teoriei.
+Ca i la manualul de teorie este posibil† alegerea unui test pentru
+verificarea cunotiin€elor acumulate Œn urma studiul urm†toarelor
+fenomene:
+.incy 10
+.color 4
+   Fenomene mecanice
+   Fenomene termice
+   Fenomene electromagnetice
+   Fenomene optice
+   Fenomene atomice, nucleare si de corp solid
+.incy 10
+.color 0
+   Dup† alegerea unui item se solicit† specificarea unuia din cele
+apte tipuri de teste disponibile.
+.incy 10
+   Timpul acordat pentru rezolvarea unui test de autoverificare este
+nelimitat. Dac† elevul a greit o problem†, calculatorul Œi prezint†
+partea de teorie care trebuia Œnv†€at† pentru rezolvarea problemei.
+Dup† citirea teoriei elevul poate reŒncerca problema.
+.eop
+.color 4
+.font 4 3
+.stringcenter FIZICA v.1.0 - Editorul de teste
+.color 0
+.font 5 5
+.incy 50
+ Editorul de teste este un modul al acestui program a c†rui accesare
+se face doar de c†tre profesor pe baza unei parole.
+.incy 10
+ Editorul de teste se prezint† sub forma unui mediu vizual Œn care
+profesorul poate crea sau modifica un test de probleme. ‰n felul
+acesta programul devine un sistem deschis.
+.incy 10
+ Fiierele cu teste au extensia .HTP i rezultat† Œn urma compil†rii
+fiierelor surs† .SRC care sunt simple fiiere ASCII. Editorul de teste
+permite atƒt crearea fiierelor .SRC cƒt i compilarea acestora.
+.incy 10
+ O alt† modalitate pentru crearea .HTP - urilor este scrierea cu un
+simplu editor ASCII a fiierelor .SRC i apoi compilarea de la promptul
+DOS a acestora, folosind compilatorul Œn linie de comand† din acest
+pachet.
+.eop
+.color 4
+.font 4 3
+.stringcenter FIZICA v.1.0 - Autorii programului
+.font 4 1
+.color 0
+.incy 120
+    G. Chirlean     -  proiectant didactic
+.incy 40
+    D. Chirlean     -  proiectant didactic
+.incy 40
+    Marian Ve€eanu -  programator & designer
+.incy 65
+.color 4
+          (c) G&D Chirlean ;  V.M.A. soft
+.eop
+.cuprins
+.color 4
+.font 4 3
+
+.stringcenter FIZICA v.1.0 - Informa€ii
+
+
+.font 4 1
+.color 1
+      {noteoln}
+.link 7 Despre autorii programului
+
+
+      {noteoln}
+.link 2 Despre meniul principal
+
+
+      {noteoln}
+.link 3 Despre manual
+
+
+      {noteoln}
+.link 4 Despre testele de verificare
+
+
+      {noteoln}
+.link 5 Despre testele de autoverificare
+
+
+      {noteoln}
+.link 6 Despre editorul de teste
+
+.eop
+

