@@ -29,7 +29,7 @@ Features
 Screencast
 ----------
 
-- [http://www.vmasoft.net/phyics.html](http://www.vmasoft.net/phyics.html)
+- [http://www.vmasoft.net/physics.html](http://www.vmasoft.net/physics.html)
 
 Screenshots
 -----------
