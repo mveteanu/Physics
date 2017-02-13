@@ -26,6 +26,14 @@ Features
 - mouse support
 - hyper-text documents
 
+Screencast
+----------
+
+- [http://www.vmasoft.net/phyics.html](http://www.vmasoft.net/phyics.html)
+
+Screenshots
+-----------
+
 ![Physics](img/physics01.png)
 ![Physics](img/physics02.png)
 ![Physics](img/physics03.png)
